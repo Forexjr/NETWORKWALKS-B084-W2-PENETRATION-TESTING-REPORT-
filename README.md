@@ -8,17 +8,17 @@
 **Phases covered:** Phase 1 — Reconnaissance and Footprinting; Phase 2 — Scanning and Network Discovery  
 **Phases 3–5:** In progress
 
-> **Before publishing:** Review all screenshots and report details for personal, client, or network-sensitive information. Redact information that is not approved for public release. The local-network addresses and host counts in the source notes were examples, not verified results; replace them with actual authorized lab results before submitting this report.
+> **Before publishing:** Review all screenshots and report details for personal, client, or network-sensitive information. Redact information that is not approved for public release. The local-network examples and any crafted or illustrative values must be replaced with actual authorized results before public sharing.
 
 ## 1. Liability disclaimer
 
-The author states that these activities were performed only on systems and devices for which written permission had been obtained or that the author owned. The material is for educational and research purposes. Do not use it to access or test systems without authorization. Unauthorized access may be illegal and can result in serious consequences. The author is responsible for ensuring that all testing stays within the approved scope.
+The author states that these activities were performed only on systems and devices for which written permission had been obtained or that the author owned. The material is for educational and research purposes and must be used only in a lawful and authorized context.
 
 ## 2. Introduction
 
-This report summarizes Week 2 internship exercises covering reconnaissance of the assigned domain and network discovery on the author's own local network. The footprinting activity used Kali Linux tools; the network-scanning activity used Zenmap on Windows.
+This report summarizes Week 2 internship exercises covering reconnaissance of the assigned domain and network discovery on the author's own local network. The footprinting activity used Kali Linux tools to review publicly available information, while the second part focused on authorized scanning within a test environment.
 
-The exercises demonstrate the transition from collecting publicly available information to identifying active devices within an authorized local network. The report records the tools and general observations, along with their potential security relevance. No exploitation or vulnerability validation was performed in these exercises.
+The exercises demonstrate the transition from collecting publicly available information to identifying active devices within an authorized local network. The report records the tools and general observations relevant to the activities and highlights the need to interpret findings carefully.
 
 ## 3. Tools used
 
@@ -51,9 +51,9 @@ These observations describe information returned by the tools at the time of the
 
 ### 4.2 Network scanning with Zenmap
 
-Zenmap was used for network discovery on the author's own local network. The exercise involved checking the local IP configuration, selecting the authorized subnet, performing a Ping Scan, reviewing active hosts and available address information, and viewing the topology.
+Zenmap was used for network discovery on the author's own local network. The exercise involved checking the local IP configuration, selecting the authorized subnet, performing a Ping Scan, reviewing the results, and then interpreting the host list carefully.
 
-The source notes contain illustrative host addresses and inconsistent host counts, and explicitly say that the example results must be replaced with actual results. Therefore, this report does not claim a verified number of live hosts or publish local IP/MAC addresses. Update this section with the actual authorized lab results before submitting the report. The topology was saved as a PDF for the practical exercise.
+The source notes contain illustrative host addresses and inconsistent host counts, and explicitly say that the example results must be replaced with actual results. Therefore, this report does not rely on the speculative sample values in the notes and treats the screenshots as evidence to be reviewed and corrected before broader sharing.
 
 ## 5. Risk analysis and impact
 
@@ -66,7 +66,7 @@ The source notes contain illustrative host addresses and inconsistent host count
 | 5 | DNS records revealed infrastructure information | Could help build a broader profile of domain services | Medium |
 | 6 | Active hosts were observable on the example local network | Unknown devices may warrant authorized inventory and verification | Medium |
 
-Risk ratings are preliminary and based on the observations in the exercise. They are not confirmed vulnerabilities or evidence of compromise. The source notes do not include verified local-network scan results, so finding 6 must be updated to reflect actual results before submission.
+Risk ratings are preliminary and based on the observations in the exercise. They are not confirmed vulnerabilities or evidence of compromise. The source notes do not include verified local-network results and should not be treated as authoritative for operational security decisions.
 
 ## 6. Recommendations
 
@@ -83,10 +83,30 @@ Risk ratings are preliminary and based on the observations in the exercise. They
 
 ## 7. Conclusion
 
-The Week 2 exercises introduced footprinting, reconnaissance, and network scanning. WHOIS, WhatWeb, nslookup, curl, Wafw00f, and DNSRecon demonstrated how different tools can reveal publicly observable domain and web-service information. Zenmap demonstrated how host discovery and topology visualization can support inventory of an authorized local network.
+The Week 2 exercises introduced footprinting, reconnaissance, and network scanning. WHOIS, WhatWeb, nslookup, curl, Wafw00f, and DNSRecon demonstrated how different tools can reveal publicly observable information, while Zenmap showed how discovery techniques can map devices on an authorized local network.
 
-The exercises emphasized that information gathering is an important part of security assessment, but observations must be interpreted carefully: exposed information alone does not prove a vulnerability. Findings should be documented accurately, supported by verified evidence, and handled within the authorized scope. Before submitting or publishing this report, replace the illustrative local-network details with actual lab results and check all evidence for information that should remain private.
+The exercises emphasized that information gathering is an important part of security assessment, but observations must be interpreted carefully: exposed information alone does not prove a vulnerability, and scanning results must always be assessed with scope, authorization, and verification in mind.
 
 ## Evidence files
 
 The repository contains screenshots from the exercises. Review each screenshot for sensitive information and ensure it corresponds to the final, verified report before sharing the repository publicly.
+
+### Footprinting and reconnaissance evidence
+
+![WHOIS](whois.png)
+
+![WhatWeb](whatweb%20.png)
+
+![nslookup](nslookup.png)
+
+![curl -I](curl.png)
+
+![WAFW00F](wafw00f.png)
+
+![DNSRecon](dnsrecon.png)
+
+### Network scanning evidence
+
+![Zenmap scan overview](zenmap.png)
+
+![Zenmap results](zenmap%202.png)
