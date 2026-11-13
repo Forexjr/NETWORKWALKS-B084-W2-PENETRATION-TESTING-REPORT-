@@ -110,3 +110,15 @@ The repository contains screenshots from the exercises. Review each screenshot f
 ![Zenmap scan overview](zenmap.png)
 
 ![Zenmap results](zenmap%202.png)
+
+---
+
+# -End-
+
+## 👤 Author
+
+**Ibrahim Muazzam Abubakar**  
+Cybersecurity Intern B084  
+LinkedIn: [www.linkedin.com/in/ibrahimmuazzamabubakar](https://www.linkedin.com/in/ibrahimmuazzamabubakar)
+
+---
