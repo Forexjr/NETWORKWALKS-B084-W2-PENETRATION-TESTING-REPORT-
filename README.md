@@ -111,6 +111,8 @@ The repository contains screenshots from the exercises. Review each screenshot f
 
 ![Zenmap results](zenmap%202.png)
 
+![Network topology](Topology%202.png)
+
 ---
 
 # -End-
