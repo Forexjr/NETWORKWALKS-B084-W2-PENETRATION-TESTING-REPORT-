@@ -8,7 +8,7 @@
 **Phases covered:** Phase 1 — Reconnaissance and Footprinting; Phase 2 — Scanning and Network Discovery  
 **Phases 3–5:** In progress
 
-> **Before publishing:** Review all screenshots and report details for personal, client, or network-sensitive information. Redact information that is not approved for public release. The local-network examples and any illustrative or sample values must be replaced with actual authorized results before public sharing.
+> **Before publishing:** Review all screenshots and report details for personal, client, or network-sensitive information. Redact information that is not approved for public release. Replace illustrative or sample values with actual authorized results before sharing.
 
 ## 1. Liability disclaimer
 
@@ -51,9 +51,9 @@ These observations describe the information returned by the tools at the time of
 
 ### 4.2 Network scanning with Zenmap
 
-Zenmap was used for network discovery on the author's own local network. The exercise involved checking the local IP configuration, selecting the authorized subnet, performing a Ping Scan, reviewing the results, and then interpreting the host list carefully.
+Zenmap was used for network discovery on the author's own local network. The exercise involved checking the local IP configuration, selecting the authorized subnet, performing a Ping Scan, reviewing the results, and interpreting the host list carefully.
 
-The source notes contain illustrative host addresses and inconsistent host counts, and explicitly state that the example results must be replaced with actual results. Therefore, this report does not rely on the speculative sample values in the notes and treats the screenshots as evidence to be reviewed and corrected before broader sharing.
+The source notes contain illustrative host addresses and inconsistent host counts, and state that example results must be replaced with actual results. Therefore, this report does not rely on speculative sample values; screenshots should be verified and corrected before broader sharing.
 
 ## 5. Risk analysis and impact
 
@@ -93,34 +93,34 @@ The repository contains screenshots from the exercises. Review each screenshot f
 
 ### Footprinting and reconnaissance evidence
 
-![WHOIS](whois.png)
+![WHOIS results](whois.png)
 
-![WhatWeb](whatweb%20.png)
+![WhatWeb results](whatweb%20.png)
 
-![nslookup](nslookup.png)
+![nslookup results](nslookup.png)
 
-![curl -I](curl.png)
+![curl response headers](curl.png)
 
-![WAFW00F](wafw00f.png)
+![Wafw00f results](wafw00f.png)
 
-![DNSRecon](dnsrecon.png)
+![DNSRecon results](dnsrecon.png)
 
-### Network scanning evidence
+### Network scanning and topology evidence
 
 ![Zenmap scan overview](zenmap.png)
 
-![Zenmap results](zenmap%202.png)
+![Zenmap scan results](zenmap%202.png)
 
-![Network topology](Topology%202.png)
+**Figure — Network topology:** The topology diagram added to the repository is shown below. Check it for internal or personally identifying network details before public sharing.
+
+![Network topology diagram](Topology%202.png)
 
 ---
 
-# -End-
+# End
 
-## 👤 Author
+## Author
 
 **Ibrahim Muazzam Abubakar**  
 Cybersecurity Intern B084  
 LinkedIn: [www.linkedin.com/in/ibrahimmuazzamabubakar](https://www.linkedin.com/in/ibrahimmuazzamabubakar)
-
----
